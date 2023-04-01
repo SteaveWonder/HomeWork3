@@ -7,7 +7,7 @@ bool Palindrom(int num)
 {
     int a = num;
     int reverse = 0;
-    while(a > 0)
+    while (a > 0)
     {
         int lastNumber = a % 10;
         reverse = reverse * 10 + lastNumber;
