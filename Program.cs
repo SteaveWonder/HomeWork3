@@ -5,15 +5,15 @@
 
 bool Palindrom(int num)
 {
-    int a = num;
-    int reverse = 0;
-    while (a > 0)
+    int tempNum = num;
+    int reverseNum = 0;
+    while (tempNum > 0)
     {
-        int lastNumber = a % 10;
-        reverse = reverse * 10 + lastNumber;
-        num = num / 10;
+        int lastNumber = tempNum % 10;
+        reverseNum = reverseNum * 10 + lastNumber;
+        tempNum = tempNum / 10;
     }
-    if (num == reverse)
+    if (num == reverseNum)
     {
         return true;
     }
